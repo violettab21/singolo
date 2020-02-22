@@ -1,29 +1,62 @@
 
-.wrapper {
+@font-face {
+  font-weight: 400;
+  font-family: "Lato";
+
+  src: url("./assets/fonts/Lato-Regular.ttf");
+}
+
+@font-face {
+  font-weight: 700;
+  font-family: "Lato";
+
+  src: url("./assets/fonts/Lato-Bold.ttf");
+}
+
+@font-face {
+  font-weight: 900;
+  font-family: "Lato";
+
+  src: url("./assets/fonts/Lato-Black.ttf");
+}
+
+@font-face {
+  font-weight: 300;
+  font-family: "Lato";
+
+  src: url("./assets/fonts/Lato-Light.ttf");
+}
+
+body {
   width: 1020px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  width: 940px;
   margin: 0 auto;
 }
 
 .header {
   height: 90px;
+
   background-color: #2d2f39;
   border-bottom: 5px solid #323746;
 }
 
-.container {
+.header__wrapper {
   display: flex;
   justify-content: space-between;
 }
 
 .header__navigation {
-  margin: 31px 39px 0 0;
+  margin: 30px -1px 0 0;
 }
 
 .navigation {
   display: flex;
   justify-content: space-between;
   width: 372px;
-  height: 90px;
 }
 
 .navigation li {
@@ -36,6 +69,7 @@
   align-items: center;
   width: auto;
   height: 37px;
+
   font-weight: 700;
   font-size: 12px;
   line-height: 37px;
@@ -58,13 +92,15 @@ li.active a {
   position: relative;
   top: -3px;
   left: 13px;
+
   font-size: 14px;
   font-family: "Lato", sans-serif;
   color: #494e62;
 }
 
 .logo h1 {
-  margin: 40px 0 0 40px;
+  margin-top: 40px;
+
   font-weight: 700;
   font-size: 25px;
   line-height: 6px;
@@ -78,8 +114,9 @@ li.active a {
 .logo::after {
   content: "*";
   position: relative;
-  top: -15px;
-  left: 147px;
+  top: -31px;
+  left: 107px;
+
   font-size: 25px;
   font-family: "Lato", sans-serif;
   color: #f06c64;
@@ -88,13 +125,16 @@ li.active a {
 /*slider*/
 .carousel {
   position: relative;
+
   height: 595px;
+
   background-color: #f06c64;
   border-bottom: 5px solid #ea676b;
 }
 
 .item-content {
   position: relative;
+
   width: 100%;
 }
 
@@ -109,30 +149,36 @@ li.active a {
 .iphone-vertical {
   position: absolute;
   top: 53px;
-  left: 111px;
+  left: 72px;
+
   width: 215px;
   height: 460px;
+
   border-radius: 35px;
   box-shadow: 25px 25px #ce5d56;;
 }
 
-.image1 {
+.screen-vertical {
   position: absolute;
   top: 65px;
   left: 14px;
+
   width: 188px;
   height: 334px;
   overflow: hidden;
-  background-image: url("./assets/Layer 6.png");
-  background-position: -13px -135px;
+
+  background-image: url("./assets/images/Screen1.png");
+  background-position: -14px -135px;
 }
 
 .iphone-horizontal {
   position: absolute;
   top: -56px;
-  left: 652px;
+  left: 613px;
+
   width: 215px;
   height: 460px;
+
   border-radius: 35px;
   box-shadow: 25px -27px #ce5d56;
   -webkit-transform: rotate(90deg);
@@ -140,15 +186,17 @@ li.active a {
   transform-origin: 0;
 }
 
-.image2 {
+.screen-horizontal {
   position: absolute;
   top: 304px;
   left: 108px;
+
   width: 334px;
   height: 188px;
   overflow: hidden;
-  background-image: url("./assets/Layer 5.png");
-  background-position: -124px -119px;
+
+  background-image: url("./assets/images/Screen2.png");
+  background-position: -125px -119px;
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
   transform-origin: 0;
@@ -157,7 +205,9 @@ li.active a {
   position: absolute;
   top: 0;
   bottom: 0;
+
   width: 85px;
+
   cursor: pointer;
 }
 
@@ -191,15 +241,17 @@ li.active a {
 /*services*/
 .our-services {
   height: 495px;
+
   font-size: 12px;
   font-family: "Lato", sans-serif;
   color: #666d89;
+
   background-color: #f2f2f2;
   border-bottom: 5px solid #ffffff;
 }
 
 .services__description {
-  padding: 68px 35px 0 40px;
+  padding-top: 68px;
 }
 
 .services__description h2 {
@@ -213,6 +265,7 @@ li.active a {
   width: 940px;
   height: 57px;
   padding-top: 28px;
+
   font-weight: 300;
   font-size: 18px;
   line-height: 30px;
@@ -223,8 +276,7 @@ li.active a {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 40px;
-  margin: 49px 40px 0 40px;
+  margin-top: 49px;
 }
 
 .service {
@@ -232,6 +284,7 @@ li.active a {
   justify-content: space-between;
   width: 300px;
   height: 123px;
+  overflow: hidden;
 }
 
 .service__description {
@@ -250,9 +303,9 @@ li.active a {
 .service__description p {
   height: 128px;
   padding-top: 10px;
+
   font-weight: 400;
   font-size: 12px;
   line-height: 21px;
   text-align: justify;
 }
-
