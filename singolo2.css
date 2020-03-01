@@ -76,22 +76,20 @@ body {
 
 .tag {
   margin-right: 8px;
-  padding: 3px 6px;
-
+  padding: 2px 6px;
   text-align: center;
-
-  border: 1px solid #666d89;
-  border-radius: 5px;
   cursor: pointer;
 }
 
-.tag_selected {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 22px;
-  color: #dedede;
+.tag_bordered {
+  border: 1px solid #666d89;
+  border-radius: 5px;
+}
 
+.tag_selected {
+  color: #dedede;
   border: 1px solid #c5c5c5;
+  border-radius: 5px;
 }
 
 .tag:hover {
@@ -178,7 +176,7 @@ body {
   margin-right: 5px;
 }
 
-object {
+.icon-obj {
   border: 1px solid #666d89;
   border-radius: 22px;
 }
@@ -187,7 +185,7 @@ svg {
   cursor: pointer;
 }
 
-object:hover {
+.icon-obj:hover {
   background-color: #767e9e;
 }
 
